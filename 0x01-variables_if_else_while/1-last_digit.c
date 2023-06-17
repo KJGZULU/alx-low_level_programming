@@ -3,19 +3,20 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Retrn: 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {
 int n;
+int g;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-printf("Last digit of %d is %d", n, abs(n) % 10);
-if (abs(n) % 10 > 5)
-printf("and is greater than 5\n");
-else if (abs(n) % 10 == 0)
-printf("and is 0\n");
-else
-printf("and is less than 6 and not 0\n");
+g = n % 10;
+if (g > 5)
+printf("Last digit of %d is %d and is greater than 5\n", n, g);
+if (g == 0)
+printf("Last digit of %d is %d and is 0\n", n, g);
+if (g < 6 && g != 0)
+printf("Last digit of %d id %d and is less than 6 and not 0\n", n, g);
 return (0);
 }
