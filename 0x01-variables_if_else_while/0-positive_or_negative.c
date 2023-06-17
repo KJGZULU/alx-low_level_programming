@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
-*main - Positive anything is better than negative nothing
+*main - Entry point Positive anything is better than negative nothing
 *Return: 0 (success)
 */
 int main(void)
