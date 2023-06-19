@@ -4,9 +4,7 @@
  * Return: Always 0 (success)
  */
 int main(void)
-/**
- * A program that prints all possible different combinations of three digits
- */
+
 {
 int d, p, q;
 for (d = '0'; d < '9'; d++)
